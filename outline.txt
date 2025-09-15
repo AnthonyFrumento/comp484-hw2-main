@@ -1,0 +1,24 @@
+head = contains meta information
+body = contains the site text
+	header = contains information that appears on all pages such as titles and navigation
+	-banner role = points to header
+		h1 = title of class
+		h2 = title of lesson
+		nav = site navigation stored here
+		-navigation = points to nav	
+	main = the main text of the website
+	-main role = points to main
+		article = main talking point of the page
+			header = title and intro of article
+				h3 = title
+				p = intro
+			section = a section of the article
+				h3 = title of the section
+				p = content of the section
+				aside = separate content highlighted as important information
+				-complementary role = points to aside
+					h4 = title of aside
+					p = content of aside
+					blockquote = quote related to aside 
+	footer = shows CSUN name, address, link
+	-contentinfo
